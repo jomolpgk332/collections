@@ -57,6 +57,12 @@ public class Installation
 		}break;
 		case 3:
 		{
+			if(list.isEmpty()) {
+				System.out.println("There is no application installed");
+			}
+			else {
+				
+			
 			Iterator it=list.iterator();
 			for(i=0;i<list.size();i++) {
 				System.out.println(i+" "+it.next());
@@ -64,9 +70,13 @@ public class Installation
 			System.out.println("Enter the index of application to be removed");
 			int index=s.nextInt();
 			list.remove(index);}
+		//System.out.println("Successfully uninstalled");
+		}
 		break;
 		case 4:{
+			System.out.println("Successfully exited");
 			System.exit(0);
+			
 		}
 		default:
 		{
